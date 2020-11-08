@@ -1,0 +1,91 @@
+//Exercise_1
+//if the student pass or not 
+//Exercise.java
+
+import java.util.Scanner; 
+ 
+public class Exercise {
+   
+public static void main (String args[]) {
+
+Scanner input = new Scanner (System.in);
+
+int lab1;
+int lab2;
+int lab3;
+int lab4;
+int lab5;
+int lab6;
+int lab7;
+int lab8;
+int test1;
+int ergasia1;
+int simetoxi1;
+int telikonex1;
+int sum;
+double average;
+double CW;
+double TB;
+
+
+System.out.println("please insert lab1");
+lab1 = input.nextInt();
+
+System.out.println("please insert lab2");
+lab2 = input.nextInt();
+
+System.out.println("please insert lab3");
+lab3 = input.nextInt();
+
+System.out.println("please insert lab4");
+lab4 = input.nextInt();
+
+System.out.println("please insert lab5");
+lab5 = input.nextInt();
+
+System.out.println("please insert lab6");
+lab6 = input.nextInt();
+
+System.out.println("please insert lab7");
+lab7 = input.nextInt();
+
+System.out.println("please insert lab8");
+lab8 = input.nextInt();
+
+System.out.println("please insert test1");
+test1 = input.nextInt();
+
+System.out.println("please insert ergasia1");
+ergasia1 = input.nextInt();
+
+System.out.println("please insert simetoxi1");
+simetoxi1 = input.nextInt();
+
+System.out.println("please insert telikonex1");
+telikonex1 = input.nextInt();
+
+sum = lab1 + lab2 + lab3 + lab4 + lab5 + lab6 + lab7 + lab8;
+average = sum / 8;
+
+CW = average * 0.4 + test1 * 0.2 + ergasia1 * 0.3 + simetoxi1 * 0.1;
+
+TB = CW * 0.4 + telikonex1 * 0.6; 
+
+if (TB >=50 && CW >=35 && telikonex1>=35)
+         System.out.printf("PASSED %d", TB);
+         
+ 
+    if (TB >=50 && CW <35 && telikonex1>=35)
+           System.out.printf("FAILED %d", CW);
+ 
+    if (TB <50 && CW >=35 && telikonex1>=35)
+             System.out.printf("FAILED %d", TB);
+      if (TB >=50 && CW >=35 && telikonex1 < 35) 
+             System.out.printf("FAILED %d", sum);
+
+
+
+}
+}
+
+ 
